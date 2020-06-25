@@ -17,7 +17,6 @@ let package = Package(
         .target(
             name: "FMPhotoPicker",
             path: "FMPhotoPicker/FMPhotoPicker",
-            sources: ["FMPhotoPicker/FMPhotoPicker"],
             resources: [.process("FMPhotoPicker/FMPhotoPicker/source/Assets.xcassets")])
     ],
     swiftLanguageVersions: [.v5]
