@@ -17,10 +17,10 @@ let package = Package(
         .target(
             name: "FMPhotoPicker",
             path: "FMPhotoPicker/FMPhotoPicker",
+            exclude: ["./Info.plist"],
             resources: [
                 .process("./source/Assets.xcassets"),
-                .process("./Info.plist"),
-            ])
+            ]),
     ],
     swiftLanguageVersions: [.v5]
 )
