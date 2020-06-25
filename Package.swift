@@ -16,7 +16,7 @@ let package = Package(
     targets: [
         .target(
             name: "FMPhotoPicker",
-            path: ".",
+            path: "FMPhotoPicker/FMPhotoPicker",
             sources: ["FMPhotoPicker/FMPhotoPicker"],
             resources: [.process("FMPhotoPicker/FMPhotoPicker/source/Assets.xcassets")])
     ],
