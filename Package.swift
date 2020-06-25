@@ -1,9 +1,10 @@
-// swift-tools-version:5.0
+// swift-tools-version:5.3
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 import PackageDescription
 
 let package = Package(
     name: "FMPhotoPicker",
+    defaultLocalization: "en",
     platforms: [
         .iOS(.v9)
     ],
@@ -16,7 +17,8 @@ let package = Package(
         .target(
             name: "FMPhotoPicker",
             path: ".",
-            sources: ["FMPhotoPicker/FMPhotoPicker"])
+            sources: ["FMPhotoPicker/FMPhotoPicker"],
+            resources: [.process("FMPhotoPicker/FMPhotoPicker/source/Assets.xcassets")])
     ],
     swiftLanguageVersions: [.v5]
 )
